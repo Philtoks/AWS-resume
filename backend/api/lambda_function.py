@@ -19,7 +19,7 @@ def lambda_handler(event, context):
                     },
                 }
             )
-            # Retrieve the value of count from table
+            # Retrieve the value of count from dynamoDB table
             count = response['Item']['pageViews']['N']
 
             # Increment Count by 1
