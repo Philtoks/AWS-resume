@@ -30,7 +30,7 @@ def lambda_handler(event, context):
 
             
 
-            # Update the value of Count in table
+            # Update the value of Count in dynamodB table 
             response = table.update_item(
                 TableName= 'kloudresume',
                 Key={
