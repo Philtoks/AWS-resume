@@ -20,7 +20,7 @@ jobs:
           uses: vimtor/action-zip@v1.2
           with:
             files: 'backend/api/lambda_function.py'
-            dest: 'get_visitor_counter.zip'
+            dest: '/temp/get_visitor_counter.zip'
 
         - name: 'Upload zipfile to S3'
           uses: shallwefootball/s3-upload-action@master
@@ -28,7 +28,7 @@ jobs:
             aws_bucket: ${{ secrets.AWS_S3_BUCKET }}
             aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
-            source_dir: 'get_visitor_counter.zip'
+            source_dir: '/temp/get_visitor_counter.zip'
 
         - name: 'Configure AWS credentials'   
           uses: aws-actions/configure-aws-credentials@v4

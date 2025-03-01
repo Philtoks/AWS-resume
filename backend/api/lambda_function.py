@@ -10,7 +10,7 @@ def lambda_handler(event, context):
     try:
         # Route key 
         
-            # Get the item from table
+            # Get the item from dynamoDB table
             response = table.get_item(
                 TableName= 'kloudresume',
                 Key={
