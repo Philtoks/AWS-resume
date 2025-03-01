@@ -19,7 +19,7 @@ jobs:
         - name: 'Zip Lambda Function'
           uses: vimtor/action-zip@v1.2
           with:
-            files: 'backend/api/get_visitor_counter.py'
+            files: 'backend/api/lambda_function.py'
             dest: 'get_visitor_counter.zip'
 
         - name: 'Upload zipfile to S3'
