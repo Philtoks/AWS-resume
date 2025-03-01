@@ -3,6 +3,7 @@ import boto3
 
 
 
+
 # Create the DynamoDB resource
 table = boto3.client('dynamodb')
 
