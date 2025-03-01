@@ -25,7 +25,7 @@ def lambda_handler(event, context):
             # Increment Count by 1
             count = int(count) + 1
 
-            # Retrieve value of id from table
+            # Retrieve value of id from dynamoDb table
             ID = response['Item']['id']['N']
 
             
