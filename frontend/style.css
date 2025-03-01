@@ -1,0 +1,364 @@
+* {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+  background: black;
+  color: white;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Styling the header with image */
+#home {
+  width: 100%;
+  height: 100vh;
+
+  /* Background image*/
+  background-image: url("./imgs/laptop.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container {
+  padding: 10px 10%;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 140px;
+}
+
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a.smoothscroll {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  background-color: gray;
+  color: white;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.header-text p {
+  margin-top: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+ .header-text .view-count {
+  font-size: 25px;
+}
+
+.header-text .view-count #counter {
+  color: gold;
+}
+
+/*    About Page  */
+#about {
+
+  color: black;
+}
+
+.abt-container {
+  padding: 10px 0;
+}
+.abt-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px 10%;
+}
+
+.abt-side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+.abt-side img {
+  width: 100%;
+  padding: 20px;
+  vertical-align: middle;
+  
+}
+
+.abt-main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.abt-main p {
+  font-size: 20px;
+}
+.abt-main-header {
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/*    Skills Page  */
+#Skills {
+
+}
+
+#Resume {
+  background-color: whitesmoke;
+}
+/*-------------Resume Page-------------------*/
+.resume-container {
+  padding: 10px 0;
+}
+
+
+/* Card Style */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.section-title .icon {
+  margin-right: 8px;
+  color: black; /* Teal Color */
+}
+
+/* Work and Education Containers */
+.work-container, .education-container {
+  margin-bottom: 20px;
+}
+
+.job-title, .edu-title {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.job-duration, .edu-duration {
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.job-duration .fa-calendar, .edu-duration .fa-calendar {
+  margin-right: 6px;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  line-height: 1.6;
+}
+
+.current {
+  background-color: grey;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Horizontal Line */
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+
+/*---------Contact Page-------*/
+#Contact {
+   /* Background image*/
+   background-image: url("./imgs/glass_pencil.png");
+   background-size: cover;
+   background-position: center;
+}
+/* Contact Section */
+.contact-section {
+  padding: 64px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.contact-section p {
+  color: #888;
+  font-size: 20px;
+  
+}
+.heading {
+  color: #f0f0f0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 200px;
+  margin: 10px auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: white;
+  
+}
+
+.icon {
+  color: white;
+  margin-right: 10px;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #d3d3d3;
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: #888;
+}
+
+textarea.form-input {
+  height: 100px;
+  resize: none;
+}
+
+/* Button Styles */
+.send-button {
+  padding: 12px 24px;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.send-button:hover {
+  background-color: #d3d3d3;
+}
+
+
+/* ------------Footer Page --------------*/
+.footer {
+  background-color: bisque; /* Teal */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer .social-icons {
+  margin: 10px 0;
+}
+
+.footer .social-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer .social-icons i:hover {
+  color: #d1d1d1;
+  transform: scale(1.2);
+}
+
+.footer .footer-link {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+/*-------------CSS for small screen -------*/
+@media only screen and (max-with: 600px) {
+  
+}

@@ -1,0 +1,132 @@
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 10%;
+}
+
+
+
+
+
+/* Styling the top navigation bar */
+.navbar {
+    overflow: auto;
+    width: 100%;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* Navbar links */
+.navbar a.smoothscroll {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a.smoothscroll {
+      float: none;
+      display: block;
+    }
+}
+
+/* Navbar links on mouse-over */
+.navbar a.smoothscroll:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* About Page container */
+.abt-row {  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+.abt-side {
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Main column */
+.abt-main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+  
+  /* Fake image, just for this example */
+.abt-side img {
+    width: 100%;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+
+
+<!-- About Page -->
+<div class="abt-row" id="About">   
+    <div class="abt-side">
+        <img class="profile-pic" src="./imgs/Moi.png" alt>
+    </div>
+
+    <div class="abt-main"> 
+        <h2 class="abt-header">About Me</h2>
+    <p> Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    </div>
+    
+    <p class="skills-header">My Skills</p>
+
+
+
+
+
+
+
+    .abt-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .abt-side {
+      flex: 30%;
+      background-color: white;
+      padding: 20px;
+    }
+    /* Fake image, just for this example */
+    .abt-side img {
+      width: 100%;
+      padding: 20px;
+      vertical-align: middle;
+    }
+    /* Main column */
+    .abt-main {   
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    <p> Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
