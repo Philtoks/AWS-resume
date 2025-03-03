@@ -18,6 +18,7 @@ jobs:
            
         - name: 'Zip Lambda Function'
           run: |
+            mkdir -p backend/tmp
             zip -r backend/tmp/get_visitor_counter.zip backend/api/lambda_function.py
             
         - name: 'Upload zipfile to S3'
