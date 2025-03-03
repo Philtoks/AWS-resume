@@ -36,6 +36,10 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws-region: ${{secrets.AWS_REGION}}
             
+        - name: 'Upload zipfile to S3'
+          run: |
+            aws s3 cp backend/tmp/get_visitor_counter.zip s3://${{ secrets.AWS_S3_BUCKET }}/
+
         - name: 'Update Source Code'
           run: |
             aws lambda update-function-code --function-name ${{secrets.AWS_LAMBDA_NAME}} \
