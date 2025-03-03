@@ -45,7 +45,7 @@ def lambda_handler(event, context):
                     }
                 }
             )
-            # JSON body to be returned counter to frontend
+            # JSON body to be returned counter to the frontend
             json_body = {'id': ID, 'pageViews': count}
              
         

@@ -18,7 +18,7 @@ jobs:
            
         - name: 'Zip Lambda Function'
           run: |
-            zip -r ./temp/zip_files/get_visitor_counter.zip backend/api/lambda_function.py
+            zip -r backend/tmp/get_visitor_counter.zip backend/api/lambda_function.py
             
         - name: 'Upload zipfile to S3'
           uses: shallwefootball/s3-upload-action@master
@@ -26,7 +26,7 @@ jobs:
             aws_bucket: ${{ secrets.AWS_S3_BUCKET }}
             aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
-            source_dir: './temp/zip_files/get_visitor_counter.zip'
+            source_dir: 'get_visitor_counter.zip'
 
         - name: 'Configure AWS credentials'   
           uses: aws-actions/configure-aws-credentials@v4
