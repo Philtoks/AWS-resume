@@ -28,9 +28,18 @@ html {
 
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
 .container {
   padding: 10px 10%;
-
+  padding-top: 60px;
 }
 
 nav {
