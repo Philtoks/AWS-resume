@@ -42,5 +42,5 @@ def lambda_handler(event, context):
     
     return {
         'statusCode': status_code,
-        'body': json_body.json()
+        'body': json_body['pageViews']
     }
