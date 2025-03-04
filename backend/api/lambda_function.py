@@ -40,7 +40,5 @@ def lambda_handler(event, context):
         status_code = 400
         json_body = {'error': str(e)}
     
-    return {
-        'statusCode': status_code,
-        'body': json_body
-    }
+    return json_body
+    
