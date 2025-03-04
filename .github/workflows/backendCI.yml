@@ -19,7 +19,7 @@ jobs:
         - name: 'Zip Lambda Function'
           run: |
             mkdir -p backend/tmp
-            zip -r backend/tmp/get_visitor_counter.zip backend/api/lambda_function.py
+            zip -r backend/tmp/get_visitor_counter.zip lambda_function.py
             
 
         - name: 'Configure AWS credentials'   

@@ -33,7 +33,7 @@ def lambda_handler(event, context):
                 ':val1': count
             }
         )
-        # JSON body to be returned count value to the frontend
+        # JSON body to be returned count to the frontend
         json_body = {'id': ID, 'pageViews': count}
         
     except Exception as e:
