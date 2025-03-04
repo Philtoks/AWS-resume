@@ -32,9 +32,10 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white; /* Adjust as needed */
+  background-color: black; /* Adjust as needed */
   z-index: 1000; /* Ensure it is above other elements */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  height: 70px;
 }
 
 .container {
@@ -53,6 +54,7 @@ nav {
 
 .logo {
   width: 140px;
+  
 }
 
 
